@@ -6,12 +6,19 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
+import { icons } from "react-icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "KINDA | Personal Portfolio",
   description: "KINDA is a full-stack developer with a huge desire to learn.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/images/hero.jpg", // pour les appareils Apple
+    shortcut: "/hero.jpg",
+  },
+  
 };
 
 export default function RootLayout({
